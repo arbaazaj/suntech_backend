@@ -1,8 +1,177 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.course-detail {
+    max-width: 800px; /* Limit the width of the course detail section */
+    margin: 20px auto; /* Center the section */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-detail h2 {
+    color: #333;
+}
+
+.course-image {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px; /* Space above the button */
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background-color: #28a745; /* Green color for the Enroll button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.course-buttons {
+    display: flex;
+    margin-top: 15px; /* Space between course details and buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.enroll-btn {
+    background-color: #28a745; /* Green color for the Enroll button */
+}
+
+.learn-more-btn {
+    background-color: #007bff; /* Blue color for the Learn More button */
+}
+
+.btn:hover {
+    opacity: 0.9; /* Slightly fade the button on hover */
+}
+
+.spacer {
+    margin: 20px 0; /* Adjust the value as needed */
+}
+
+.center-grid {
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* For block elements (like div, section, etc.) */
+.center-block {
+    width: 50%; /* or any width you want */
+    margin: 0 auto; /* This centers the block horizontally */
+}
+
+.center-inline {
+    text-align: center; /* Centers inline elements within the block */
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .container {
@@ -52,4 +221,99 @@ button:hover {
 #message {
     text-align: center;
     margin-top: 20px;
+}
+
+/* Courses card view styles */
+.course-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.course-card {
+    position: relative; /* Position relative to allow absolute positioning of the discount badge */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px; /* Position the badge at the top */
+    left: 10px; /* Position the badge at the left */
+    background-color: #ff4757; /* Red background for the discount badge */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 10; /* Ensure the badge is above other elements */
+}
+
+.old-price {
+    text-decoration: line-through; /* Strikethrough for the old price */
+    color: #999; /* Gray color for the old price */
+}
+
+.new-price {
+    color: #28a745; /* Green color for the new price */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.course-card h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.course-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+/* Teacher card view styles */
+.teacher-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.teacher-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.teacher-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
+}
+
+.teacher-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.teacher-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.teacher-card:hover {
+    transform: scale(1.05);
 }

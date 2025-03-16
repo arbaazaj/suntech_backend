@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Your Logo</div>
+        <ul>
+            <li><a href="index.html#teachers">Teachers</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+            <li><a href="register.html">Register Today</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Register for Sun Tech Course</h1>
+    <form enctype="multipart/form-data" id="registrationForm">
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="text" id="fatherName" name="fatherName" placeholder="Father's Name" required>
+        <input type="text" id="motherName" name="motherName" placeholder="Mother's Name" required>
+        <input type="date" id="dob" name="dob" placeholder="Date of Birth" required>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="text" id="address" name="address" placeholder="Address" required>
+        <input type="text" id="mobile" name="mobile" placeholder="Mobile Number" required>
+        <input type="text" id="aadhaar" name="aadhaar" placeholder="Aadhaar Number" required>
+        <input type="text" id="qualification" name="qualification" placeholder="Qualification" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <input type="text" id="course" name="course" value="Mobile App Development" readonly>
+
+        <button type="submit">Register</button>
+    </form>
+    <div id="message"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

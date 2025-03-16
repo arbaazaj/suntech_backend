@@ -3,35 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Registration</title>
+    <title>Computer Institute</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <h1>Register for Sun Tech Course</h1>
-    <form enctype="multipart/form-data" id="registrationForm">
-        <input type="file" id="photo" name="photo" accept="image/*" required>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="text" id="fatherName" name="fatherName" placeholder="Father's Name" required>
-        <input type="text" id="motherName" name="motherName" placeholder="Mother's Name" required>
-        <input type="date" id="dob" name="dob" placeholder="Date of Birth" required>
-        <select id="gender" name="gender" required>
-            <option value="" disabled selected>Select your gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-        </select>
-        <input type="text" id="address" name="address" placeholder="Address" required>
-        <input type="text" id="mobile" name="mobile" placeholder="Mobile Number" required>
-        <input type="text" id="aadhaar" name="aadhaar" placeholder="Aadhaar Number" required>
-        <input type="text" id="qualification" name="qualification" placeholder="Qualification" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <input type="text" id="course" name="course" value="Mobile App Development" readonly>
+<header>
+    <nav>
+    <div class="logo">Your Logo - Sun Tech Computer Institute</div>
+        <ul>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="register.html">Register Today</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <button type="submit">Register</button>
-    </form>
-    <div id="message"></div>
-</div>
+<main>
+    <section id="teachers" class="center-block">
+        <h2 class="center-block">Our Teachers</h2>
+        <div class="teacher-profiles">
+            <div class="teacher-card">
+                <img src="path_to_teacher1_image.jpg" alt="Teacher 1">
+                <h3>Teacher 1</h3>
+                <p><strong>Qualification:</strong> M.Sc. in Computer Science</p>
+                <p><strong>Experience:</strong> 5 years</p>
+                <p><strong>Specialization:</strong> Flutter Development</p>
+            </div>
+            <div class="teacher-card">
+                <img src="path_to_teacher2_image.jpg" alt="Teacher 2">
+                <h3>Teacher 2</h3>
+                <p><strong>Qualification:</strong> B.Tech in IT</p>
+                <p><strong>Experience:</strong> 3 years</p>
+                <p><strong>Specialization:</strong> Web Development</p>
+            </div>
+            <div class="teacher-card">
+                <img src="path_to_teacher3_image.jpg" alt="Teacher 3">
+                <h3>Teacher 3</h3>
+                <p><strong>Qualification:</strong> M.Tech in Software Engineering</p>
+                <p><strong>Experience:</strong> 7 years</p>
+                <p><strong>Specialization:</strong> Mobile App Development</p>
+            </div>
+            <div class="teacher-card">
+                <img src="path_to_teacher4_image.jpg" alt="Teacher 4">
+                <h3>Teacher 4</h3>
+                <p><strong>Qualification:</strong> B.Sc. in Computer Applications</p>
+                <p><strong>Experience:</strong> 4 years</p>
+                <p><strong>Specialization:</strong> Data Science</p>
+            </div>
+            <div class="teacher-card">
+                <img src="path_to_teacher5_image.jpg" alt="Teacher 5">
+                <h3>Teacher 5</h3>
+                <p><strong>Qualification:</strong> MBA in IT Management</p>
+                <p><strong>Experience:</strong> 6 years</p>
+                <p><strong>Specialization:</strong> Project Management</p>
+            </div>
+        </div>
+    </section>
+    <div class="spacer"></div>
+    <section id="courses" class="center-block">
+        <h2 class="center-block">Courses Offered</h2>
+        <div class="course-cards">
+
+            <div class="course-card">
+                <div class="discount-badge">20% Off</div>
+                <h3>ITIZEN</h3>
+                <p class="old-price">$300</p>
+                <p class="new-price">$240</p>
+                <p>Duration: 3 months</p>
+                <p>Fee: $300</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>ADCA</h3>
+                <p>Duration: 6 months</p>
+                <p>Fee: $500</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>ADFA</h3>
+                <p>Duration: 6 months</p>
+                <p>Fee: $500</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>DCA</h3>
+                <p>Duration: 3 months</p>
+                <p>Fee: $300</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>CCA</h3>
+                <p>Duration: 1 month</p>
+                <p>Fee: $150</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>CCC</h3>
+                <p>Duration: 1 month</p>
+                <p>Fee: $150</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>DTP</h3>
+                <p>Duration: 3 months</p>
+                <p>Fee: $300</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>Tally</h3>
+                <p>Duration: 2 months</p>
+                <p>Fee: $250</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <h3>Mobile App Development (Flutter)</h3>
+                <p>Duration: 6+ months</p>
+                <p>Fee: ₹8000</p>
+                <div class="course-buttons">
+                    <a href="register.html" class="btn enroll-btn">Enroll Today</a>
+                    <a href="course_detail.html" class="btn learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="social-links" id="contact">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 Sun Tech Computer Institute. All rights reserved.</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
