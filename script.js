@@ -3,7 +3,7 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
 
     const formData = new FormData(this); // Use FormData to gather all form fields
 
-    const response = await fetch('http://localhost:3000/register', {
+    const response = await fetch(`http://localhost:${process.env.PORT}/register`, {
         method: 'POST',
         body: formData, // Do not set Content-Type header
     });
