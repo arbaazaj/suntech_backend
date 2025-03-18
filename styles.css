@@ -111,30 +111,35 @@ header {
     height: 100vh; /* Full height of the viewport */
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
+/*nav {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 0 20px;*/
+/*}*/
 
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
+/*nav .logo {*/
+/*    font-size: 24px;*/
+/*    font-weight: bold;*/
+/*}*/
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
+/*nav ul {*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*}*/
 
-nav ul li {
-    margin: 0 15px;
-}
+/*nav ul li {*/
+/*    margin: 0 15px;*/
+/*}*/
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+/*nav ul li a {*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+.box {
+    padding: 20px; /* Add padding to the box */
+    border-radius: 8px; /* Rounded corners */
 }
 
 main {
@@ -240,14 +245,27 @@ button:hover {
 }
 
 .course-card {
-    position: relative; /* Position relative to allow absolute positioning of the discount badge */
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out children */
+    height: 100%; /* Make all course cards the same height */
+}
+
+.box {
+    padding: 20px; /* Add padding to the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Ensure the background is white */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.old-price {
+    text-decoration: line-through; /* Strikethrough for the old price */
+    color: #999; /* Gray color for the old price */
+}
+
+.new-price {
+    color: #28a745; /* Green color for the new price */
+    font-weight: bold; /* Bold for emphasis */
 }
 
 .discount-badge {
@@ -261,16 +279,6 @@ button:hover {
     font-weight: bold;
     font-size: 14px;
     z-index: 10; /* Ensure the badge is above other elements */
-}
-
-.old-price {
-    text-decoration: line-through; /* Strikethrough for the old price */
-    color: #999; /* Gray color for the old price */
-}
-
-.new-price {
-    color: #28a745; /* Green color for the new price */
-    font-weight: bold; /* Bold for emphasis */
 }
 
 .course-card h3 {
